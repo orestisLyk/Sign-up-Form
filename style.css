@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Norse;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+* {
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: stretch;
+}
+
+
+
+#left-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 1;
+    background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    min-width: 36%;
+}
+
+#right-container {
+    flex: 1 1 1;
+    background-color: rgba(236, 236, 236, 0.514);
+}
+
+#title-card {
+    display: flex;
+    justify-content: center;
+    font-family: Norse,sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.527);
+    height: 10%;
+    padding: 1em;
+    margin-top: 30vh;
+}
+
+#title-card span {
+    align-self: center;
+    font-size: 4em;
+    margin-left:2rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 4vh;
+    align-self: center;
+    color: white;
+}
+
+#footer a {
+    color: white;
+}
+
+#header {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+#header p {
+    margin: 2rem;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(32, 32, 32, 0.781);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.form-row {
+    display: flex;
+  flex-wrap: nowrap;
+  gap: 2em;
+}
+
+#bottom-right button {
+    padding: 0.7em;
+    background-color: #596D48;
+    color: white;
+    border-radius: 0.4em;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+#bottom-right a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 600;
+}
+
+#bottom-right {
+    padding: 2rem;
+}
+
+form p {
+    font-size: small;
+}
+
+form input {
+    padding: 0.3em;
+}
+
+form input:focus {
+    /* border-color: #596D48; */
+    border-width: 1px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.692);
+    background-color: #596d483b;
+}
+
+form input:invalid {
+    border-color: rgb(218, 0, 0);
+}

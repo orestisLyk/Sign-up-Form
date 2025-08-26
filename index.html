@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container" id="left-container">
+        <div id="title-card">
+            <img src="./images/odin-lined.png" alt="logo">
+            <span>ODIN</span>
+        </div>
+
+        <div id="footer">
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </p>
+        </div>
+    </div>
+
+    <div class="container" id="right-container">
+
+        <div class="right-section" id="header">
+            <p>
+                This is not a real online service! This is just practice.
+                Just to be sure, don't enter real passwords or email because you never know.
+                Consider yourself warned.
+            </p>
+
+            <p>
+                What are you still doing here? Might as well sign up now.
+            </p>
+        </div>
+
+        <form class="right-section" id="my-form" action="" method="post">
+            <h1>Let's do this!</h1>
+            <div class="form-row">
+                <label for="name">Name:
+                    <input type="text" id="name" name="name" placeholder="Bob" maxlength="15">
+                </label>
+
+                <label for="surname">Surname:
+                    <input type="text" id="surname" name="surname" placeholder="Bebop" maxlength="15">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:
+                    <input type="email" id="email" name="user_email" placeholder="bebop@somethingmail.com">
+                </label>
+
+                <label for="tel-number">Phone Number:
+                    <input type="tel" id="tel-number" name="user_tel">
+                </label>
+
+            </div>
+
+            <div class="form-row">
+                <label for="pwd">Password:
+                    <input type="password" id="pwd" name="user_password" minlength="10">
+                    <p>(at least 10 characters)</p>
+                </label>
+
+                <label for="pwd-confirm">Confirm Password:
+                    <input type="password" id="pwd-confirm" name="user_password_confirmation">
+                </label>
+            </div>
+
+        </form>
+
+        <div class="right-section" id="bottom-right">
+            <button type="submit" form="my-form">Create Account</button>
+            <p>Already have an account? <a href="fill me">Log in</a></p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
